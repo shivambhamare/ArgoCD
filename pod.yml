@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: my-app
+spec:
+  containers:
+  - name: my-container
+    image: your-registry/your-image:tag
+    ports:
+    - containerPort: 80
+      protocol: TCP
+    # Add additional container configurations if needed
+    # env:
+    # - name: ENV_VARIABLE
+    #  
