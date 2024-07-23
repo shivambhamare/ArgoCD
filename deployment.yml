@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: your-registry/your-image:tag
+        image: nginx
         ports:
         - containerPort: 80
         # Add additional container configurations if needed
