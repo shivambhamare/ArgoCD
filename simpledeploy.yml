@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy11
+  labels:
+    app: simple-pod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-pod
+  template:
+    metadata:
+      labels:
+        app: simple-pod
+    spec:
+      containers:
+      - name: simple-pod
+        image: nginx
+        ports:
+        - containerPort: 80
